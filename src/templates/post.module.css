@@ -1,0 +1,38 @@
+.head {
+  padding: 180px 0 100px 0;
+  background: #333;
+}
+
+.headArea {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
+  align-items: center;
+}
+.summary {
+  order: 1;
+}
+.photo {
+  order: 2;
+  width: 100%;
+}
+
+@media screen and (max-width: 736px) {
+  .headArea {
+    display: block;
+  }
+  .photo {
+    margin-bottom: 32px;
+  }
+}
+
+.body {
+  background: #fff;
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 100px 0;
+}

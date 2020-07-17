@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  padding: 180px 0 100px 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
+
+.category {
+  width: 120px;
+  position: fixed;
+  margin-top: 8px;
+}
+
+.posts {
+  margin-left: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .category {
+    display: none;
+  }
+  .posts {
+    margin: 0;
+  }
+}

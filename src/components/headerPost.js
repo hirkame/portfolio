@@ -4,6 +4,36 @@ import React from "react"
 import Logo from "./logo"
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.listener = null
+    this.state = {
+      color: "black",
+      post: false,
+    }
+  }
+
+  componentDidMount() {
+    if (window.location.pathname.indexOf("/post/") !== -1) {
+      const height = document.getElementById("postHead").clientHeight
+
+      this.listener = document.addEventListener("scroll", e => {
+        var scrolled = document.scrollingElement.scrollTop
+
+        if (scrolled >= height) {
+          this.setState({ color: "black" })
+        } else {
+          this.setState({ color: "white" })
+        }
+      })
+    }
+  }
+
+  componentDidUpdate() {
+    document.removeEventListener("scroll", this.listener)
+  }
+
   render() {
     return (
       <header
@@ -27,7 +57,7 @@ class Header extends React.Component {
             justifyContent: "space-between",
           }}
         >
-          <Logo color="black" />
+          <Logo color={this.state.color} />
           <div>
             <Link
               to="/"
@@ -40,7 +70,7 @@ class Header extends React.Component {
               <h3
                 style={{
                   padding: 0,
-                  color: "#000",
+                  color: this.state.color,
                 }}
               >
                 Post
@@ -55,7 +85,7 @@ class Header extends React.Component {
                 padding: 0,
               }}
             >
-              <h3 style={{ padding: 0, color: "#000" }}>About</h3>
+              <h3 style={{ padding: 0, color: this.state.color }}>About</h3>
             </Link>
           </div>
         </div>

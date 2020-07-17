@@ -1,0 +1,11 @@
+.card {
+  padding: 8px 16px;
+  margin-bottom: 48px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.card:hover {
+  opacity: 0.5;
+  transform: scale(0.99, 0.99);
+}
