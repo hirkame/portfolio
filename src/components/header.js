@@ -40,7 +40,6 @@ class Header extends React.Component {
               <h3
                 style={{
                   padding: 0,
-                  color: "#000",
                 }}
               >
                 Post
@@ -55,7 +54,13 @@ class Header extends React.Component {
                 padding: 0,
               }}
             >
-              <h3 style={{ padding: 0, color: "#000" }}>About</h3>
+              <h3
+                style={{
+                  padding: 0,
+                }}
+              >
+                About
+              </h3>
             </Link>
           </div>
         </div>

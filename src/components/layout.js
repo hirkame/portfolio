@@ -7,7 +7,7 @@
 
 import React from "react"
 
-import Header from "./headerPost"
+import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {

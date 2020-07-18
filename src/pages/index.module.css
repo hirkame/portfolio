@@ -1,15 +1,22 @@
-.container {
+.flexBox {
   display: flex;
-  padding: 180px 0 100px 0;
   margin: 0 auto;
   width: 90%;
   max-width: 900px;
+  padding: 100px 0;
 }
 
 .category {
+  position: sticky;
+  top: 180px;
+  align-self: flex-start;
   width: 120px;
-  position: fixed;
   margin-top: 8px;
+}
+
+.tagItem {
+  padding: 0;
+  margin: 0 0 8px 0;
 }
 
 .posts {

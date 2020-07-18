@@ -9,57 +9,65 @@ import indexStyles from "../pages/index.module.css"
 
 const TagTemplate = ({ pageContext, data }) => {
   const tagPosts = data.tagPosts.edges
+  const tagList = data.tagList.group
   const tagActive = pageContext.tag
 
   return (
     <Layout>
       <SEO title={tagActive} />
-      <div className={indexStyles.container}>
-        <div className={indexStyles.category}>
-          <h3>Category</h3>
-          <ul>
-            {data.tagList.group.map(({ fieldValue, totalCount }) => {
-              if (fieldValue === tagActive) {
-                return (
-                  <li key={fieldValue}>
-                    <Link
-                      to={`/tag/${fieldValue}`}
-                      style={{
-                        padding: 0,
-                        margin: "0 0 8px 0",
-                        fontWeight: "bold",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      - {fieldValue} ({totalCount})
-                    </Link>
-                  </li>
-                )
-              } else {
-                return (
-                  <li key={fieldValue}>
-                    <Link
-                      to={`/tag/${fieldValue}`}
-                      style={{ padding: 0, margin: "0 0 8px 0" }}
-                    >
-                      - {fieldValue} ({totalCount})
-                    </Link>
-                  </li>
-                )
-              }
-            })}
-          </ul>
+      <div>
+        <div style={{ padding: "180px 0 100px 0", background: "#E9F2F8" }}>
+          <h1 style={{ textAlign: "center", margin: "0", color: "black" }}>
+            #{tagActive}
+          </h1>
         </div>
-        <div className={indexStyles.posts}>
-          <ul>
-            {tagPosts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <PostPreview data={node} />
-                </li>
-              )
-            })}
-          </ul>
+        <div className={indexStyles.flexBox}>
+          <div className={indexStyles.category}>
+            <h3>Category</h3>
+            <ul>
+              {tagList.map(({ fieldValue, totalCount }) => {
+                if (fieldValue === tagActive) {
+                  return (
+                    <li key={fieldValue}>
+                      <Link
+                        to={`/tag/${fieldValue}`}
+                        className={indexStyles.tagItem}
+                        style={{
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                          color: "#1F4C66",
+                        }}
+                      >
+                        #{fieldValue} ({totalCount})
+                      </Link>
+                    </li>
+                  )
+                } else {
+                  return (
+                    <li key={fieldValue}>
+                      <Link
+                        to={`/tag/${fieldValue}`}
+                        className={indexStyles.tagItem}
+                      >
+                        #{fieldValue} ({totalCount})
+                      </Link>
+                    </li>
+                  )
+                }
+              })}
+            </ul>
+          </div>
+          <div className={indexStyles.posts}>
+            <ul>
+              {tagPosts.map(({ node }) => {
+                return (
+                  <li key={node.slug}>
+                    <PostPreview data={node} />
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </Layout>

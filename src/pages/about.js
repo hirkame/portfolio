@@ -47,21 +47,21 @@ const About = () => (
         <h3>Contact</h3>
         <p>
           <a
-            style={{ textDecoration: "underline" }}
+            style={{ textDecoration: "underline", color: "#1F4C66" }}
             href="https://twitter.com/hirkame"
           >
             Twitter
           </a>{" "}
           /{" "}
           <a
-            style={{ textDecoration: "underline" }}
+            style={{ textDecoration: "underline", color: "#1F4C66" }}
             href="https://www.linkedin.com/in/hiroki-kameyama/"
           >
             Linkedin
           </a>{" "}
           /{" "}
           <a
-            style={{ textDecoration: "underline" }}
+            style={{ textDecoration: "underline", color: "#1F4C66" }}
             href="https://github.com/hirkame"
           >
             Github

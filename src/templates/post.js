@@ -20,13 +20,9 @@ const PostTemplate = ({ data }) => {
               <Img alt={post.title} fluid={post.heroImage.fluid} />
             </div>
             <div className={postStyles.summary}>
-              <h1 style={{ color: "#fff", padding: 0, margin: "0 0 24px 0" }}>
-                {post.title}
-              </h1>
-              <h3 style={{ color: "#fff", padding: 0, margin: "0 0 16px 0" }}>
-                {post.tags}
-              </h3>
-              <p style={{ color: "#fff", padding: 0, margin: "0 0 16px 0" }}>
+              <h1 style={{ padding: 0, margin: "0 0 24px 0" }}>{post.title}</h1>
+              <h3 style={{ padding: 0, margin: "0 0 16px 0" }}>{post.tags}</h3>
+              <p style={{ padding: 0, margin: "0 0 16px 0" }}>
                 {post.description.description}
               </p>
               <p style={{ color: "#ddd", padding: 0, margin: 0 }}>

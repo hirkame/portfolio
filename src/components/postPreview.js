@@ -10,11 +10,10 @@ const PostPreview = ({ data }) => {
     <div className={postStyles.card}>
       <Link to={`/post/${data.slug}`}>
         <h3 style={{ padding: "8px 0", margin: 0 }}>{data.title}</h3>
-        <object>
-          {data.tags.map(tagName => {
-            return <TagLabel tagName={tagName} key={tagName} />
-          })}
-        </object>
+
+        {data.tags.map(tagName => {
+          return <TagLabel tagName={tagName} key={tagName} />
+        })}
         <p style={{ padding: "8px 0", margin: 0 }}>
           {data.description.description}
         </p>
