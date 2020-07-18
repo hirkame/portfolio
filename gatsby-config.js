@@ -7,7 +7,8 @@ if (process.env.NODE_ENV != "production") {
 module.exports = {
   siteMetadata: {
     title: `Hiroki Kameyama`,
-    description: `Portfolio.`,
+    description: `Hiroki Kameyama is a student at University of Tokyo. His academic interests are Political Science and African Politics.`,
+    siteUrl: `https://hirokikameyama.com`,
     author: `@hirkame`,
   },
   plugins: [
@@ -24,13 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `portfolio-v2`,
-        short_name: `portfolio2`,
+        name: `Hiroki Kameyama`,
+        short_name: `hirkame`,
         start_url: `/`,
-        background_color: `#585469`,
-        theme_color: `#585469`,
+        background_color: `#ffffff`,
+        theme_color: `#333333`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
     {
