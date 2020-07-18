@@ -16,10 +16,8 @@ const TagTemplate = ({ pageContext, data }) => {
     <Layout>
       <SEO title={tagActive} />
       <div>
-        <div style={{ padding: "180px 0 100px 0", background: "#E9F2F8" }}>
-          <h1 style={{ textAlign: "center", margin: "0", color: "black" }}>
-            #{tagActive}
-          </h1>
+        <div style={{ padding: "180px 0 100px 0", background: "#F2F2F2" }}>
+          <h1 style={{ textAlign: "center", margin: "0" }}>#{tagActive}</h1>
         </div>
         <div className={indexStyles.flexBox}>
           <div className={indexStyles.category}>
@@ -35,7 +33,7 @@ const TagTemplate = ({ pageContext, data }) => {
                         style={{
                           fontWeight: "bold",
                           textDecoration: "underline",
-                          color: "#1F4C66",
+                          color: "#333333",
                         }}
                       >
                         #{fieldValue} ({totalCount})

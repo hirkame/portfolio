@@ -27,8 +27,8 @@ module.exports = {
         name: `portfolio-v2`,
         short_name: `portfolio2`,
         start_url: `/`,
-        background_color: `#333333`,
-        theme_color: `#333333`,
+        background_color: `#585469`,
+        theme_color: `#585469`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },

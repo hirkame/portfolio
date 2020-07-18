@@ -23,6 +23,7 @@ h1 {
   letter-spacing: 0.05em;
   margin: 0 0 32px 0;
   padding: 0;
+  color: #333333;
 }
 h2 {
   font-family: Helvetica;
@@ -56,10 +57,12 @@ a {
   font-size: 12px;
   line-height: 175%;
   letter-spacing: 0.05em;
-  color: #333333;
-  text-decoration: none;
+  color: #585469;
   padding: 8px 0 32px 0;
   margin: 0;
+}
+a {
+  text-decoration: "underline";
 }
 ul {
   padding: 0;

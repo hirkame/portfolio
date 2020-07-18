@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
           style={{
             padding: "180px 0 100px 0",
             textAlign: "center",
-            background: "#E9F2F8",
+            background: "#F2F2F2",
           }}
         >
           <div
@@ -30,7 +30,6 @@ const IndexPage = ({ data }) => {
           >
             <h1
               style={{
-                color: "black",
                 textAlign: "left",
                 marginBottom: "16px",
                 padding: "0",
@@ -53,9 +52,9 @@ const IndexPage = ({ data }) => {
                 to="/about"
                 style={{
                   paddingBottom: 0,
-                  textDecoration: "underline",
                   fontFamily: "Helvetica",
                   fontSize: "18px",
+                  color: "#585469",
                 }}
               >
                 About me

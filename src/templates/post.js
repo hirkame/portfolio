@@ -1,8 +1,10 @@
 import Img from "gatsby-image"
+import { graphql } from "gatsby"
 import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TagLabel from "../components/tagLabel"
 
 import postStyles from "./post.module.css"
 
@@ -20,12 +22,16 @@ const PostTemplate = ({ data }) => {
               <Img alt={post.title} fluid={post.heroImage.fluid} />
             </div>
             <div className={postStyles.summary}>
-              <h1 style={{ padding: 0, margin: "0 0 24px 0" }}>{post.title}</h1>
-              <h3 style={{ padding: 0, margin: "0 0 16px 0" }}>{post.tags}</h3>
+              <h1 style={{ padding: 0, margin: "0 0 16px 0" }}>{post.title}</h1>
+              <div style={{ padding: 0, margin: "0 0 16px 0" }}>
+                {post.tags.map(tagName => {
+                  return <TagLabel tagName={tagName} key={tagName} />
+                })}
+              </div>
               <p style={{ padding: 0, margin: "0 0 16px 0" }}>
                 {post.description.description}
               </p>
-              <p style={{ color: "#ddd", padding: 0, margin: 0 }}>
+              <p style={{ color: "#333333", padding: 0, margin: 0 }}>
                 {post.createdAt}
               </p>
             </div>

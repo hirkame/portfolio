@@ -5,7 +5,7 @@ const TagLabel = ({ tagName }) => (
     key={tagName}
     style={{
       display: "inline-block",
-      background: "#1F4C66",
+      background: "#585469",
       color: "#ffffff",
       padding: "4px 8px",
       margin: "8px 8px 8px 0",

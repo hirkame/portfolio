@@ -27,7 +27,7 @@ class Header extends React.Component {
             justifyContent: "space-between",
           }}
         >
-          <Logo color="black" />
+          <Logo />
           <div>
             <Link
               to="/"
