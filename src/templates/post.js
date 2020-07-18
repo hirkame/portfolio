@@ -13,7 +13,7 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout headerColor="#fff">
-      <SEO title="Home" />
+      <SEO title={post.title} description={post.description.description} />
       <div>
         {/* Head */}
         <div className={postStyles.head} id="postHead">

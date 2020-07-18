@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Hiroki Kameyama" />
       <div>
         <div
           style={{
