@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
             <ul>
               {data.tags.group.map(({ fieldValue, totalCount }) => {
                 return (
-                  <li key={fieldValue}>
+                  <li key={fieldValue} className={indexStyles.tagList}>
                     <Link
                       to={`/tag/${fieldValue}`}
                       className={indexStyles.tagItem}

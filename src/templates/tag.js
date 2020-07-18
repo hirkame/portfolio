@@ -26,7 +26,7 @@ const TagTemplate = ({ pageContext, data }) => {
               {tagList.map(({ fieldValue, totalCount }) => {
                 if (fieldValue === tagActive) {
                   return (
-                    <li key={fieldValue}>
+                    <li key={fieldValue} className={indexStyles.tagList}>
                       <Link
                         to={`/tag/${fieldValue}`}
                         className={indexStyles.tagItem}
@@ -42,7 +42,7 @@ const TagTemplate = ({ pageContext, data }) => {
                   )
                 } else {
                   return (
-                    <li key={fieldValue}>
+                    <li key={fieldValue} className={indexStyles.tagList}>
                       <Link
                         to={`/tag/${fieldValue}`}
                         className={indexStyles.tagItem}

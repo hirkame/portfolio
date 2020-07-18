@@ -11,7 +11,6 @@
   top: 180px;
   align-self: flex-start;
   width: 120px;
-  margin-top: 8px;
 }
 
 .tagItem {
@@ -26,12 +25,24 @@
 }
 
 @media screen and (max-width: 600px) {
+  .flexBox {
+    display: block;
+  }
   .category {
-    display: none;
+    display: block;
+    width: auto;
+    margin: 0 0 48px 0;
+    position: relative;
+    top: initial;
+    align-self: initial;
   }
   .posts {
     margin: 0;
     width: 100%;
     padding: 0;
+  }
+  .tagList {
+    display: inline-block;
+    margin-right: 16px;
   }
 }
