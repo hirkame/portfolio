@@ -35,32 +35,42 @@ class Header extends React.Component {
                 textDecoration: `none`,
                 display: "inline-block",
                 padding: 0,
+                color: "#585469",
+                fontDamily: "Helvetica",
+                fontStyle: "normal",
+                fontWeight: "bold",
+                fontSize: "14px",
+                lineHeight: "150%",
+                letterSpacing: "0.05em",
+              }}
+              activeStyle={{
+                color: "#000000",
+                textDecoration: "underline",
               }}
             >
-              <h3
-                style={{
-                  padding: 0,
-                }}
-              >
-                Post
-              </h3>
+              Post
             </Link>
             <Link
               to="/about"
               style={{
-                display: "inline-block",
                 textDecoration: `none`,
-                marginLeft: "50px",
+                display: "inline-block",
                 padding: 0,
+                marginLeft: "50px",
+                color: "#585469",
+                fontDamily: "Helvetica",
+                fontStyle: "normal",
+                fontWeight: "bold",
+                fontSize: "14px",
+                lineHeight: "150%",
+                letterSpacing: "0.05em",
+              }}
+              activeStyle={{
+                color: "#000000",
+                textDecoration: "underline",
               }}
             >
-              <h3
-                style={{
-                  padding: 0,
-                }}
-              >
-                About
-              </h3>
+              About
             </Link>
           </div>
         </div>
