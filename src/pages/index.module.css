@@ -20,7 +20,9 @@
 }
 
 .posts {
-  margin-left: 150px;
+  width: calc(100% - 120px);
+  box-sizing: border-box;
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 600px) {

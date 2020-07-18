@@ -14,17 +14,12 @@ const PostPreview = ({ data }) => {
           textDecoration: "none",
         }}
       >
-        <h3 style={{ padding: "8px 0", margin: 0 }}>{data.title}</h3>
-
+        <h3 className={postStyles.title}>{data.title}</h3>
         {data.tags.map(tagName => {
           return <TagLabel tagName={tagName} key={tagName} />
         })}
-        <p style={{ padding: "8px 0", margin: 0 }}>
-          {data.description.description}
-        </p>
-        <p style={{ color: "#828282", padding: "8px 0", margin: 0 }}>
-          {data.publishDate}
-        </p>
+        <p className={postStyles.desc}>{data.description.description}</p>
+        <p className={postStyles.date}>{data.publishDate}</p>
       </Link>
     </div>
   )
