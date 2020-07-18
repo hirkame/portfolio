@@ -1,6 +1,7 @@
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -25,7 +26,11 @@ const PostTemplate = ({ data }) => {
               <h1 style={{ padding: 0, margin: "0 0 16px 0" }}>{post.title}</h1>
               <div style={{ padding: 0, margin: "0 0 16px 0" }}>
                 {post.tags.map(tagName => {
-                  return <TagLabel tagName={tagName} key={tagName} />
+                  return (
+                    <Link to={`/tag/${tagName}`} key={tagName}>
+                      <TagLabel tagName={tagName} />
+                    </Link>
+                  )
                 })}
               </div>
               <p style={{ padding: 0, margin: "0 0 16px 0" }}>
