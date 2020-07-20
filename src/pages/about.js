@@ -21,8 +21,7 @@ const About = () => (
           Hiroki Kameyama is a university student in Japan. <br />
           He has been studying social sciences at the Department of Humanities
           and Social Sciences of University of Tokyo. His academic interests are
-          African Politics, Political Science in Africa, and Qualitative Social
-          Science.
+          African Politics, Political Science, and Qualitative Social Science.
           <br />
           Alongside his academic studies, he does Web/App design and front-end
           coding as a freelancer.
