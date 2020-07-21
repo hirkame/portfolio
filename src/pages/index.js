@@ -101,7 +101,7 @@ export default IndexPage
 
 export const query = graphql`
   query MyQuery {
-    posts: allContentfulBlogPost {
+    posts: allContentfulBlogPost(sort: { order: DESC, fields: publishDate }) {
       edges {
         node {
           title

@@ -76,7 +76,10 @@ export default TagTemplate
 
 export const query = graphql`
   query TagQuery($tag: String) {
-    tagPosts: allContentfulBlogPost(filter: { tags: { eq: $tag } }) {
+    tagPosts: allContentfulBlogPost(
+      filter: { tags: { eq: $tag } }
+      sort: { order: DESC, fields: publishDate }
+    ) {
       edges {
         node {
           title
