@@ -37,7 +37,7 @@ const PostTemplate = ({ data }) => {
                 {post.description.description}
               </p>
               <p style={{ color: "#333333", padding: 0, margin: 0 }}>
-                {post.createdAt}
+                {post.publishDate}
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default PostTemplate
 export const query = graphql`
   query PostQuery($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
-      createdAt(formatString: "MMMM Do, YYYY")
+      publishDate(formatString: "MMMM Do, YYYY")
       slug
       title
       tags
