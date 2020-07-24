@@ -36,3 +36,15 @@
   margin: 0 auto;
   padding: 100px 0;
 }
+
+li {
+  list-style: disc;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: #585469;
+  margin-left: 2em;
+}
