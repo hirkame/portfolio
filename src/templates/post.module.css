@@ -37,7 +37,7 @@
   padding: 100px 0;
 }
 
-li {
+.body li {
   list-style: disc;
   font-family: Noto Sans JP;
   font-style: normal;
