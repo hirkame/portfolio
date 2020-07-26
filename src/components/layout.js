@@ -10,15 +10,10 @@ import React from "react"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, footerColor }) => {
   return (
     <>
       <Header />
-      {/* {
-        if (window.location.pathname.indexOf("/post/")){
-          console.log("yay")
-        }
-      } */}
       <main>{children}</main>
       <footer
         style={{
