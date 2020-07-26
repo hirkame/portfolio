@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
             <h1
               style={{
                 textAlign: "left",
-                marginBottom: "16px",
+                marginBottom: "25px",
                 padding: "0",
                 lineHeight: "220%",
               }}
@@ -51,18 +51,22 @@ const IndexPage = ({ data }) => {
               <Link
                 to="/about"
                 style={{
-                  paddingBottom: 0,
-                  fontFamily: "Helvetica",
-                  fontSize: "18px",
-                  color: "#585469",
+                  padding: 0,
                 }}
               >
-                About me
+                <h3
+                  style={{
+                    color: "#585469",
+                    padding: 0,
+                  }}
+                >
+                  About me
+                </h3>
               </Link>
             </div>
           </div>
         </div>
-        <div className={indexStyles.flexBox}>
+        <div className={indexStyles.flexBox} id="post">
           <div className={indexStyles.category}>
             <h3>Category</h3>
             <ul>
