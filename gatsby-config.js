@@ -49,6 +49,8 @@ module.exports = {
         display: "swap",
       },
     },
-    "gatsby-transformer-remark",
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
   ],
 }
