@@ -22,6 +22,12 @@ const PostTemplate = ({ data }) => {
           <div className={postStyles.headArea}>
             <div className={postStyles.photo}>
               <Img alt={post.title} fluid={post.heroImage.fluid} />
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: post.copyright.childMarkdownRemark.html,
+                }}
+                style={{ padding: 0, marginTop: "16px" }}
+              />
             </div>
             <div className={postStyles.summary}>
               <h1 style={{ padding: 0, margin: "0 0 16px 0" }}>{post.title}</h1>
@@ -122,6 +128,11 @@ export const query = graphql`
       heroImage {
         fluid(maxWidth: 800) {
           ...GatsbyContentfulFluid_tracedSVG
+        }
+      }
+      copyright {
+        childMarkdownRemark {
+          html
         }
       }
     }
