@@ -65,7 +65,7 @@ const PostTemplate = ({ data }) => {
 
           {/* Back to the Post page. */}
           <Link to="/#post" className={postStyles.backHome}>
-            <h3 style={{ color: "#585469" }}>See All Posts</h3>
+            <h3 style={{ color: "#585469" }}>See All Posts →</h3>
           </Link>
         </div>
       </div>

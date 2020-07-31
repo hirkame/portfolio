@@ -46,7 +46,7 @@ class Header extends React.Component {
                 letterSpacing: "0.05em",
               }}
               activeStyle={{
-                color: "#000000",
+                color: "#333333",
                 textDecoration: "underline",
               }}
             >
@@ -68,7 +68,7 @@ class Header extends React.Component {
                 letterSpacing: "0.05em",
               }}
               activeStyle={{
-                color: "#000000",
+                color: "#333333",
                 textDecoration: "underline",
               }}
             >

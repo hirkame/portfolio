@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
                     padding: 0,
                   }}
                 >
-                  About me
+                  About me →
                 </h3>
               </Link>
             </div>
