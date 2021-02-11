@@ -29,12 +29,20 @@ const About = () => (
 
         <h3>Academic Background</h3>
         <p>
-          University of Tokyo / Bachelor’s Degree, Interdisciplinary Social
-          Sciences
+          Master of Public Policy (University of Tokyo), April 2021 -
+          <br />
+          Bachelor of Interdisciplinary Social Sciences (University of Tokyo), April 2016 - March 2021
+        </p>
+
+        <h3>Thesis</h3>
+        <p>
+          亀山裕貴 「ガーナにおける医療制度改革」2021年。（卒業論文）
         </p>
 
         <h3>Experience</h3>
         <p>
+          AAIC Holdings, Pte. Ltd., Intern, November 2020 - , Tokyo
+          <br/>
           Progate Inc., Africa Team Lead, August 2018 - April 2020, Tokyo
           (Mainly remote)
           <br />
