@@ -1,0 +1,48 @@
+.flexBox {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 180px 0 100px 0;
+}
+
+.category {
+  position: sticky;
+  top: 180px;
+  align-self: flex-start;
+  width: 130px;
+}
+
+.tagItem {
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.posts {
+  width: calc(100% - 130px);
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .flexBox {
+    display: block;
+  }
+  .category {
+    display: block;
+    width: auto;
+    margin: 0 0 48px 0;
+    position: relative;
+    top: initial;
+    align-self: initial;
+  }
+  .posts {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .tagList {
+    display: inline-block;
+    margin-right: 16px;
+  }
+}

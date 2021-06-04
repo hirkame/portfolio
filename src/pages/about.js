@@ -18,10 +18,10 @@ const About = () => (
 
         <h3>Profile</h3>
         <p>
-          Hiroki Kameyama is a university student in Japan. <br />
-          He has been studying social sciences at the Department of Humanities
-          and Social Sciences of University of Tokyo. His academic interests are
-          African Politics, Political Science, and Qualitative Social Science.
+          Hiroki Kameyama is a graduate student in Japan. <br />
+          He studied social sciences at the Department of Humanities and Social Sciences of University of Tokyo. 
+          Currently, he belongs to the Graduate School of Public Policy at University of Tokyo. 
+          His major academic interest is Public Policy in African countries.
           <br />
           Alongside his academic studies, he does Web/App design and front-end
           coding as a freelancer.
@@ -41,7 +41,7 @@ const About = () => (
 
         <h3>Experience</h3>
         <p>
-          AAIC Holdings, Pte. Ltd., Intern, November 2020 - , Tokyo
+          AAIC Holdings, Pte. Ltd., Intern, November 2020 - , Tokyo & Lagos
           <br/>
           Progate Inc., Africa Team Lead, August 2018 - April 2020, Tokyo
           (Mainly remote)

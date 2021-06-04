@@ -36,11 +36,11 @@ const IndexPage = ({ data }) => {
                 lineHeight: "220%",
               }}
             >
-              Hello, my name is Hiroki.{" "}
+              Hello, my name is Hiroki KAMEYAMA.
+              <br/>
               <span style={{ fontWeight: "normal" }}>
-                I am a student at University of Tokyo. I am interested in
-                Political Science and African Politics. I post random stories on
-                this website.
+                I am a graduate student at University of Tokyo.
+                My academic intertests lie in Public Policy and African Politics. 
               </span>
             </h1>
             <div
