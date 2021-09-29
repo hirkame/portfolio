@@ -18,16 +18,14 @@ const About = () => (
 
         <h3>Profile</h3>
         <p>
-          Hiroki Kameyama is a graduate student in Japan. <br />
-          He studied social sciences at the Department of Humanities and Social Sciences of University of Tokyo. 
-          Currently, he belongs to the Graduate School of Public Policy at University of Tokyo. 
+          Hiroki Kameyama is a graduate student majoring Public Policy in Japan. <br /> 
           His major academic interest is Public Policy in African countries.
           <br />
-          Alongside his academic studies, he does Web/App design and front-end
+          Alongside his academic studies, he does Website design and front-end
           coding as a freelancer.
         </p>
 
-        <h3>Academic Background</h3>
+        <h3>Education</h3>
         <p>
           Master of Public Policy (University of Tokyo), April 2021 -
           <br />
@@ -41,14 +39,17 @@ const About = () => (
 
         <h3>Experience</h3>
         <p>
-          AAIC Holdings, Pte. Ltd., Intern, November 2020 - , Tokyo & Lagos
+          Japan International Cooperation Agency (JICA), Intern at Africa Department, Sep. 2021, Tokyo
           <br/>
-          Progate Inc., Africa Team Lead, August 2018 - April 2020, Tokyo
-          (Mainly remote)
+          AAIC Holdings, Pte. Ltd., Intern, November 2020 - April 2021, Tokyo & Lagos
+          <br/>
+          Progate Inc., Africa Team Lead, August 2018 - April 2020, Remote 
           <br />
           Hongo Aerospace Inc., Intern, April 2017 - January 2018, Tokyo
           <br />
-          NPO Bizjapan, Vice President, May 2016 - Mar. 2018, Tokyo
+          Slush Tokyo, Partner Booth Lead, December 2016 - April 2017, Tokyo
+          <br/>
+          NPO Bizjapan, Vice President, May 2016 - March 2018, Tokyo
         </p>
 
         <h3>Contact</h3>
